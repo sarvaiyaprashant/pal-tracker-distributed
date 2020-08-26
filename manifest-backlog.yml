@@ -5,9 +5,9 @@ applications:
     memory: 256M
     disk_quota: 512M
     routes:
-      - route: backlog-pal-omega.apps.evans.pal.pivotal.io
+      - route: backlog-pal-omega.cfapps.io
     path: Applications/BacklogServer/bin/Release/netcoreapp3.1/publish
     env:
-      REGISTRATION_SERVER_ENDPOINT: https://registration-pal-omega.apps.evans.pal.pivotal.io
+      REGISTRATION_SERVER_ENDPOINT: https://registration-pal-omega.cfapps.io
     services:
       - tracker-backlog-database
